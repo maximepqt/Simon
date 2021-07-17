@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.windows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 937px;
+  width: 1920px;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  height: 480px;
+  width: 960px;
+}
+
+.square {
+  display: flex;
+
+  border: 1px solid black;
+  height: 94px;
+  width: 94px;
+}
