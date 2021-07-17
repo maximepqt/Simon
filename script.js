@@ -9,9 +9,9 @@ console.log(hauteur);
 let arrColor =[ 'black','red','yellow','blue','green','brown','purple','pink','#4287f5','#4287f5','#b0f542','#8a42f5','#e8486d','#757575','#9c2424','#78ad61'];
 
 function randomColor(){
-    const randomNumberCase = Math.floor(Math.random() * 50) + 1
+    const randomNumberCase = Math.floor(Math.random() * 50) +1
     console.log(randomNumberCase);
-    const randomNumberColor = Math.floor(Math.random() * arrColor.length) + 1
+    const randomNumberColor = Math.floor(Math.random() * 15) + 1
     console.log(randomNumberColor);
 
 
@@ -20,6 +20,7 @@ function randomColor(){
     let squareChange = document.getElementById(squareCasePicker);
 
     squareChange.style.backgroundColor= arrColorPicker;
+    squareChange.innerText = arrColorPicker;
 
     console.log(arrColorPicker);
 
