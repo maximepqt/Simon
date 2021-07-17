@@ -1,7 +1,7 @@
 var largeur = window.innerWidth;
 var hauteur = window.innerHeight;
 
-let squareChange = document.getElementById("square")
+
 
 console.log(largeur);
 console.log(hauteur);
@@ -17,7 +17,7 @@ function randomColor(){
 
     let arrColorPicker = arrColor[randomNumberColor];
     let squareCasePicker = "square" + randomNumberCase;
-    let squareChange = document.getElementById("square")
+    let squareChange = document.getElementById(squareCasePicker);
 
     squareChange.style.backgroundColor= arrColorPicker;
 
@@ -27,3 +27,5 @@ function randomColor(){
 }
 
 randomColor();
+
+setInterval(randomColor,1);
